@@ -2,7 +2,7 @@ package wsb;
 
 import java.io.File;
 
-public class Animal implements feedable {
+public class Animal implements Edible, feedable {
     final String species;
     private Double weight;
     public String name;
@@ -33,11 +33,10 @@ public class Animal implements feedable {
         }
     }
 
-    public void feed() {
-        feed(DEFAULT_FEED_WEIGHT);
+    @Override
+    public void feed(Double foodWeight) {
 
     }
-private double DEFAULT_FEED_WEIGHT = 1.0;
 
     public void feed() {
         if (weight == 0) {
@@ -80,5 +79,3 @@ private double DEFAULT_FEED_WEIGHT = 1.0;
     }
 }
 
-
-        }

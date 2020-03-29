@@ -20,9 +20,9 @@ public class Main {
         me.pet = dog;
         me.setMobile(iphone);
 
-        me.pet.feed();
+      //  me.pet.feed();
         me.pet.takeForAWalk();
-        me.pet.feed();
+       // me.pet.feed();
         me.pet.takeForAWalk();
         me.pet.takeForAWalk();
         me.pet.takeForAWalk();
@@ -41,9 +41,6 @@ public class Main {
         System.out.println(me instanceof Animal);
         System.out.println(me instanceof Human);
         System.out.println(me instanceof Object);
-
-        me.feed();
-        me.pet.feed();
 
         iphone.turnOn();
         dirtyOne.turnOn();
@@ -69,6 +66,6 @@ public class Main {
         System.out.println(m0,e.car);
         System.out.println(dog);
 
-        Device d = new Phone("Samsung","S10")
+        Device d = new Phone("Samsung","S10");
     }
 }

@@ -4,6 +4,7 @@ import wsb.devices.Car;
 import wsb.devices.Phone;
 
 public class Human extends Animal{
+    private static final Double DEFAULT_FEED_WEIGHT = 1.0;
     public String firstName;
     public String lastName;
     public Animal pet;
@@ -34,7 +35,7 @@ public class Human extends Animal{
     };
 public void feed(){
     System.out.println("im a human i will use for and knife");
-    super.feed();
+    super.feed(DEFAULT_FEED_WEIGHT);
 }
 
     public Phone getMobile() {
