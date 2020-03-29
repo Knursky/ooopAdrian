@@ -2,7 +2,7 @@ package wsb.devices;
 
 import wsb.Animal;
 
-public class FarmAnimal extends Animal {
+public abstract class FarmAnimal extends Animal {
     public FarmAnimal(String species) {
         super(species);
     }

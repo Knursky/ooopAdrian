@@ -4,7 +4,7 @@ import wsb.Human;
 import wsb.Soldable;
 
 
-    public  class Car extends Device implements Soldable {
+    public abstract class Car extends Device implements Soldable {
         public final Integer yearOfProduction;
         public final Double sizeOfAnEngine;
         public String plates;
@@ -40,6 +40,8 @@ import wsb.Soldable;
             }
 
         }
+
+        public abstract boolean refuel();
     }
 
 

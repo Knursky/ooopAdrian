@@ -1,15 +1,19 @@
 package wsb;
 
 import wsb.devices.Car;
+import wsb.devices.FarmAnimal;
 import wsb.devices.Phone;
 
-public class Human extends Animal{
+public abstract class Human extends Animal{
     private static final Double DEFAULT_FEED_WEIGHT = 1.0;
     public String firstName;
     public String lastName;
     public Animal pet;
+    public Double cash = 200.0;
     private Phone mobile;
     public Car car;
+
+    public FarmAnimal[] farmAnimals;
 
     protected String phoneNumber;
     private Double salary;

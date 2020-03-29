@@ -9,12 +9,32 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-        Animal dog = new Animal("dog");
+        Animal dog = new Animal("dog") {
+            @Override
+            public void beEaten() throws Exception {
+
+            }
+
+            @Override
+            protected void kill() {
+
+            }
+        };
         dog.name = "Szynek";
 
         Phone iphone = new Phone("Apple", "6s", 4.7);
 
-        Human me = new Human();
+        Human me = new Human() {
+            @Override
+            public void beEaten() throws Exception {
+                
+            }
+
+            @Override
+            protected void kill() {
+
+            }
+        };
         me.firstName = "Kasia";
         me.lastName = "Pogo";
         me.pet = dog;
@@ -55,7 +75,7 @@ public class Main {
         knurzyca.car = dirtyOne;
 
         System.out.println(me.car);
-        system.out.println(me);
+        System.out.println(me);
 
         Human brotherInLaw = new Human();
         brotherInLaw.firstName = "Wymyslony";
@@ -63,7 +83,6 @@ public class Main {
 
 
 
-        System.out.println(m0,e.car);
         System.out.println(dog);
 
         Device d = new Phone("Samsung","S10");

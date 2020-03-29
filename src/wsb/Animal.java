@@ -2,7 +2,7 @@ package wsb;
 
 import java.io.File;
 
-public class Animal implements Edible, feedable {
+public abstract class Animal implements Edible, feedable {
     final String species;
     private Double weight;
     public String name;
@@ -77,5 +77,9 @@ public class Animal implements Edible, feedable {
     public void eat() throws Exception {
         System.out.println("that was yuammy");
     }
+
+    public abstract void beEaten() throws Exception;
+
+    protected abstract void kill();
 }
 

@@ -26,4 +26,6 @@ public abstract class Device implements Soldable {
     }
 
     public abstract void sell(Human buyer, Human seller, Double price) throws Exception;
+
+    public abstract void sell(Human buyer, Human seller) throws Exception;
 }
