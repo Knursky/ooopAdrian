@@ -32,8 +32,11 @@ public class Animal implements Soldable, Edible {
         }
     }
 
+    public void feed() {
+        feed(DEFAULT_FEED_WEIGHT);
 
-
+    }
+private double DEFAULT_FEED_WEIGHT = 1.0;
 
     public void feed() {
         if (weight == 0) {
@@ -43,6 +46,7 @@ public class Animal implements Soldable, Edible {
             System.out.println(name + " says thx for food");
         }
     }
+
 
     void takeForAWalk() {
         if(weight == 0.0){
@@ -74,3 +78,4 @@ public class Animal implements Soldable, Edible {
         System.out.println("that was yuammy");
     }
 }
+

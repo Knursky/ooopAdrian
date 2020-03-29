@@ -30,7 +30,11 @@ public class Human extends Animal{
         throw new Exception("don't do this freak");
     }
     public String toString() {
-        return firstName;
+        return this.firstName + " " + this.lastName + " im a human";
     }
 
+}
+public void feed(){
+    System.out.println("im a human i will use for and knife");
+    super.feed();
 }
