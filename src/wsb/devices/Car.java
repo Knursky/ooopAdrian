@@ -1,6 +1,9 @@
 package wsb.devices;
 
-public class Car extends Device {
+import wsb.Human;
+
+
+    public abstract class Car extends Device{
     public final Integer yearOfProduction;
     public final Double sizeOfAnEngine;
     public String plates;
@@ -32,4 +35,5 @@ public class Car extends Device {
             throw new Exception ("you dont have enaught dolans to pay :(");
     }
 }
+
 

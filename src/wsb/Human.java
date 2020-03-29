@@ -7,7 +7,7 @@ public class Human extends Animal{
     public String firstName;
     public String lastName;
     public Animal pet;
-    public Phone mobile;
+    private Phone mobile;
     public Car car;
 
     protected String phoneNumber;
@@ -31,10 +31,18 @@ public class Human extends Animal{
     }
     public String toString() {
         return this.firstName + " " + this.lastName + " im a human";
-    }
-
-}
+    };
 public void feed(){
     System.out.println("im a human i will use for and knife");
     super.feed();
 }
+
+    public Phone getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(Phone mobile) {
+        this.mobile = mobile;
+    }
+}
+

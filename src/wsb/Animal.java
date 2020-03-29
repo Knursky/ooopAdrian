@@ -2,7 +2,7 @@ package wsb;
 
 import java.io.File;
 
-public class Animal implements Soldable, Edible {
+public class Animal implements feedable {
     final String species;
     private Double weight;
     public String name;
@@ -11,6 +11,7 @@ public class Animal implements Soldable, Edible {
     private static Double NEW_DOG_WEIGHT = 4.0;
     private static Double NEW_LION_WEIGHT = 39.2;
     private static Double NEW_OTHER_ANIMAL_WEIGHT = 5.3;
+    private static Double DEFAULT_FEED_WEIGHT = 1.0;
 
     public Animal(String species) {
         System.out.println("we created new Animal");
@@ -79,3 +80,5 @@ private double DEFAULT_FEED_WEIGHT = 1.0;
     }
 }
 
+
+        }

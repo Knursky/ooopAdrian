@@ -2,6 +2,7 @@ package wsb;
 
 import wsb.devices.Car;
 import wsb.devices.Device;
+import wsb.devices.DieselCar;
 import wsb.devices.Phone;
 
 public class Main {
@@ -17,7 +18,7 @@ public class Main {
         me.firstName = "Kasia";
         me.lastName = "Pogo";
         me.pet = dog;
-        me.mobile = iphone;
+        me.setMobile(iphone);
 
         me.pet.feed();
         me.pet.takeForAWalk();
@@ -27,7 +28,12 @@ public class Main {
         me.pet.takeForAWalk();
         me.pet.takeForAWalk();
 
-        Car dirtyOne = new Car("mini", "cooper", 2019, 1.6);
+        Car dirtyOne = new DieselCar("mini", "cooper", 2019, 1.6) {
+            @Override
+            public void sell(Human buyer, Human seller) throws Exception {
+
+            }
+        };
         dirtyOne.plates = "Sro Go";
         me.car = dirtyOne;
         System.out.println(me.car.producer + " " + me.car.model + " " + me.car.plates);
